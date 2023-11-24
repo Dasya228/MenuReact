@@ -33,11 +33,12 @@ const MealPage = ()=>{
                       <div className="box">
                           <h2>{meal.strMeal}</h2>
                           <img className={'page-img'} src={meal.strMealThumb} alt=""/>
+                          <iframe src={`https://www.youtube.com/embed/${meal.strYouTube?.slice(meal.strYouTube.indexOf('=')+1)}`} frameborder="0"></iframe>
                       </div>
                   </div>
                   <div className="col-7">
                       <div className="inner-box">
-                          <h2>Ingridients</h2>
+                          <h2>Ингредиенты к блюду</h2>
                           <IngredientList ingredients={ingredients}/>
                       </div>
                   </div>
