@@ -14,12 +14,10 @@ const[meals,setMeals]=useState([])
     return(
 
         <div>
-            <Header/>
             <div className={'container'}>
                 <h1>Главное меню</h1>
                 <MealList meals={meals}/>
             </div>
-            <Footer/>
         </div>
     )
 }

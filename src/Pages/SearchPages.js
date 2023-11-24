@@ -17,13 +17,11 @@
 
      return(
          <div>
-             <Header/>
              <div className={'container'}>
                  <input type="text" placeholder={"Найти блюдо"} onChange={(e)=>setInputMeal(e.target.value)}/>
                  <button onClick={handleClick}>Поиск</button>
                  <MealList meals={search}/>
              </div>
-             <Footer/>
          </div>
      )
 
